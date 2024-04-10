@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf01ae8aatj84"]
+
+[ext_resource type="PackedScene" uid="uid://dr516ordfbcn8" path="res://Actors/ship.tscn" id="1_40q4h"]
+[ext_resource type="Script" path="res://world.gd" id="1_wi2rc"]
+[ext_resource type="Script" path="res://world_set_plane_target_polygon.gd" id="2_40jpt"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_wi2rc")
+
+[node name="Ship" parent="." instance=ExtResource("1_40q4h")]
+position = Vector2(110, 400)
+
+[node name="Ship2" parent="." instance=ExtResource("1_40q4h")]
+position = Vector2(967, 203)
+rotation = -1.11639
+
+[node name="SetPlaneTarget" type="Line2D" parent="."]
+script = ExtResource("2_40jpt")

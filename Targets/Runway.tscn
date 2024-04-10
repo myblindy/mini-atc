@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://sahx8kg22wh1"]
+
+[sub_resource type="Gradient" id="Gradient_0b6na"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7jd1y"]
+gradient = SubResource("Gradient_0b6na")
+width = 1
+
+[node name="Runway" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(13.6279, 88.625)
+texture = SubResource("GradientTexture1D_7jd1y")
+
+[node name="TargetMarker" type="Marker2D" parent="Sprite2D"]
+position = Vector2(0, 0.496474)
